@@ -140,3 +140,7 @@ LivingBeing
 ```
 
 Here, Dog and Cat extend Animal, which itself extends LivingBeing. This is still a single chain for Dog and Cat, but LivingBeing introduces another branch with Plant, which doesn't directly relate to Animal.
+
+### Summary
+- **Single Hierarchy:** Simple, straight chain of classes where each class extends just one parent class.
+- **Mixins:** Useful for adding features from multiple sources without needing a complex class hierarchy.
