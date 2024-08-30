@@ -55,6 +55,15 @@ class Human extends LivingBeing {
   // Human class now inherits walk, talk, reproduce methods
 }
 ```
+## Explanation:
+### 1. Base Class (LivingBeing):
+- Contains the methods walk(), talk(), and reproduce() that you want to reuse.
+
+### 2. Derived Classes (Animal and Human):
+- Extend the LivingBeing class to inherit its methods.
+- Animal has an additional property legs specific to it.
+- Human inherits all the methods but does not have additional properties in this example.
+
 
 ## Key Differences from Mixins:
 
