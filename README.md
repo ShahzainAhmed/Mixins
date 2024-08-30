@@ -26,7 +26,16 @@ While inheritance allows a class to inherit from a single parent class, mixins p
   Using inheritance to achieve code reuse can lead to deep and complex class hierarchies, making the code harder to manage.
 
 ## Mixins vs. Inheritance: 
-Mixins allow you to inject methods and properties from multiple sources into a class, while inheritance involves extending a single base class.
+
+### Mixins:
+- Allow a class to incorporate methods and properties from multiple sources.
+- Avoid the need for a complex class hierarchy.
+- U se the with keyword to apply multiple mixins to a class.
+
+### Inheritance:
+- Involves extending a single base class.
+- Can lead to limitations if multiple functionalities are needed.
+- Uses the extends keyword to create subclasses.
 
 ## Example:
 
