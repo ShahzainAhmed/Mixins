@@ -1,9 +1,12 @@
 # Mixins
 
-Dart mixins is a concept in the programming lanauage which helps you do the concept of reusability. It helps u to make the code reusable. 
+Mixins in Dart are a way to reuse code across multiple classes without using traditional inheritance. It helps u to make the code reusable. 
 
-Now you will think, code reusability can be done using Inheritance also right. 
-Create one parent class, and just extend the parent class from a child class to get all the properties of the parent class.
+Think of mixins as a way to add common methods and properties to different classes. Instead of creating a complex hierarchy with inheritance, mixins let you "mix in" functionality directly where it's needed.
+
+For example, if you have a Walk mixin with a walk() method, you can add this functionality to any class that needs it, like Animal and Human, without having to create a shared base class.
+
+**You might think that code reusability can be achieved with inheritance too.** Inheritance allows you to create a parent class with common properties and methods, and then have child classes extend this parent class to inherit its features. This way, the child classes get all the properties and methods of the parent class.
 
 ### Cons of Inheritance: 
 You cannot inherit mulitple classes. 
@@ -15,27 +18,33 @@ Mixins, you can get properties of two differnt mixins. It is nothing just consid
 Mixins in Dart are a way to achieve code reusability by allowing you to reuse a set of properties and methods across multiple classes. They offer a solution to some of the limitations of traditional inheritance.
 
 ## Why Use Mixins? 
-While inheritance allows a class to inherit from a single parent class, mixins provide a way to share code among multiple classes without the constraints of single inheritance. With mixins, you can include functionality from multiple sources in a class
+While inheritance lets you create a base class with shared properties and methods, mixins offer greater flexibility:
+
+- ### Single Inheritance Limitation:
+  In Dart, a class can only extend one parent class, which restricts combining features from multiple classes.
+
+- ### Mixins:
+  Allow you to mix in multiple functionalities into a single class, overcoming the limitations of single inheritance.
 
 ## Limitations of Inheritance:
 
 - ### Single Inheritance Limitation:
-  In Dart, a class can only extend one parent class. This can be restrictive if you need features from multiple classes.
+  In Dart, you can only extend one parent/base class at a time, which can be restrictive if you need features from multiple sources
 
 - ### Code Duplication:
-  Using inheritance to achieve code reuse can lead to deep and complex class hierarchies, making the code harder to manage.
+  Using inheritance for code reuse can lead to deep and complex class hierarchies, making the code harder to manage.
 
 ## Mixins vs. Inheritance: 
 
 ### Mixins:
-- Allow a class to incorporate methods and properties from multiple sources.
-- Avoid the need for a complex class hierarchy.
-- U se the with keyword to apply multiple mixins to a class.
+- **Multiple Sources:** Allow a class to incorporate methods and properties from multiple mixins.
+- **Simplicity:** Avoid complex class hierarchies by mixing in functionality as needed.
+- **Usage:** Use the with keyword to apply multiple mixins to a class.
 
 ### Inheritance:
-- Involves extending a single base class.
-- Can lead to limitations if multiple functionalities are needed.
-- Uses the extends keyword to create subclasses.
+- **Single Base Class:** Involves extending a single base class.
+- **Limitations:** Can be restrictive if you need to combine functionalities from multiple sources.
+- **Usage:** Use the extends keyword to create subclasses.
 
 ## Example:
 
