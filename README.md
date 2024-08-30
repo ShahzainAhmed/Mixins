@@ -104,12 +104,39 @@ class Human with Walk, Talk, Reproduce {
 ### Summary 
 Mixins are a powerful feature in Dart that enable code reuse by allowing you to mix in functionality from multiple sources into a single class. This approach simplifies code management and avoids the limitations and complexities of deep inheritance hierarchies.
 
-## Key Differences of Inheritance from Mixins:
+## Key Differences Between Inheritance and Mixins:
 
 - ### Inheritance Restriction: 
-  You can only extend one base class at a time. If you need to combine functionality from multiple base classes, inheritance will not suffice.
+  You can only extend one parent/base class, which limits combining functionalities from multiple classes.
 
 - ### Flexibility: 
-  Mixins offer more flexibility by allowing a class to include multiple sets of functionality from different sources without needing a complex hierarchy.
+  Mixins provide greater flexibility by allowing a class to include features from multiple sources without complex hierarchies.
 
 Using inheritance is straightforward for scenarios where you have a clear single hierarchy and need to share methods among classes. Mixins, on the other hand, are ideal for scenarios where you need to combine functionalities from multiple sources without deep inheritance hierarchies.
+
+## Single Hierarchy
+Single hierarchy refers to a situation where you have a straightforward chain of classes. In this chain, each class extends from one parent class, and there are no multiple branching paths.
+
+Imagine you have a basic class called Animal. You might create other classes like Dog and Cat that extend Animal:
+
+```
+Animal
+  ├── Dog
+  └── Cat
+```
+In this example:
+- Dog and Cat are subclasses of Animal.
+- Each subclass inherits from just one parent class (Animal), creating a single, clear chain of inheritance.
+
+## Complex Hierarchy
+A complex hierarchy might involve multiple parent classes or multiple levels of inheritance:
+
+```
+LivingBeing
+  ├── Animal
+  │   ├── Dog
+  │   └── Cat
+  └── Plant
+```
+
+Here, Dog and Cat extend Animal, which itself extends LivingBeing. This is still a single chain for Dog and Cat, but LivingBeing introduces another branch with Plant, which doesn't directly relate to Animal.
