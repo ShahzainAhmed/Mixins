@@ -1,4 +1,4 @@
-# Mixins in 
+# Mixins in Flutter
 
 Mixins in Dart are a way to reuse code across multiple classes without using traditional inheritance. It helps u to make the code reusable. 
 
